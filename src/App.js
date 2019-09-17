@@ -16,6 +16,7 @@ class App extends React.Component {
 
     componentDidMount () {
         fetch('https://jsonplaceholder.typicode.com/users')
+        //fetching objects from jsonplaceholder
         .then(response => response.json())
         .then(users => this.setState({ monsters: users }))
     }
